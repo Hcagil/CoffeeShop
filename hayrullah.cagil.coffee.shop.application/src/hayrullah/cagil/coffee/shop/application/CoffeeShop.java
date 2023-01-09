@@ -1,8 +1,6 @@
 package hayrullah.cagil.coffee.shop.application;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
-
 
 public class CoffeeShop {
 	public Coffee[] menu;
