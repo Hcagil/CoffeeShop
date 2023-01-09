@@ -5,7 +5,7 @@ Interacts user with console to take orders.
 
 Main purpose of this project is to write java application with test units (JUnit) and upload to github.
 
-- Program runs on Main.java
+Program runs on Main.java
 
 - CoffeeShop --- Show user a Coffee menu
                  Take user's order
