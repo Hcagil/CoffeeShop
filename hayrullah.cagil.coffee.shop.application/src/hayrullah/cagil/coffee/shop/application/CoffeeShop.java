@@ -12,14 +12,15 @@ public class CoffeeShop {
 		Coffee hotWater = new HotWater();
 		
 		Coffee[] menu = {espresso,doubleEspresso,cappucino,caffeeLatte,mocha,americano,hotWater};
-		System.out.println(printMenu(menu));
+		System.out.print(printMenu(menu));
 	}
+		
 	public static String printMenu(Coffee[] menu) {
 		String res = "";
 		for (int i=0; i < menu.length; i++) {
 			String coffeeName = menu[i].getName();
 			int coffeePrice = menu[i].getPrice();
-			res += i+". "+coffeeName+" ("+coffeePrice+"₺)\n";
+			res += (i+1)+". "+coffeeName+" ("+coffeePrice+"₺)\n";
 		}
 		return res;
 	}
