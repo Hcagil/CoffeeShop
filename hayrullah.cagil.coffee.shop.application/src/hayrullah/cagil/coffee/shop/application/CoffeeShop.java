@@ -3,6 +3,7 @@ package hayrullah.cagil.coffee.shop.application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class CoffeeShop {
 	public Coffee[] menu;
 	
@@ -18,7 +19,7 @@ public class CoffeeShop {
 		this.menu = new Coffee[]{espresso,doubleEspresso,cappucino,caffeeLatte,mocha,americano,hotWater};
 
 	}
-		
+	// Print different coffees in shop menu
 	public String printMenu() {
 		String res = "";
 		for (int i=0; i < menu.length; i++) {
@@ -29,6 +30,7 @@ public class CoffeeShop {
 		return res;
 	}
 	
+	// Take Coffee orders from user as an integer
 	public int getOrder() {
 		Scanner input = new Scanner(System.in);
 		int coffeeNumber = -1;
@@ -48,11 +50,13 @@ public class CoffeeShop {
 
 	}
 	
+	// Prepare order and displaying
 	public String prepareOrder() {
 		return "Tesekkurler, Kahveniz hazirlaniyor.";
 		
 	}
 	
+	// Serve coffee order to user with ingredients
 	public String serveOrder(int orderNumber) {
 		return menu[orderNumber-1].getName()+" sectiniz, iceceginiz "+menu[orderNumber-1].getRecipe()+" icermektedir.\nAfiyet Olsun.";
 	}
