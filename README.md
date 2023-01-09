@@ -15,11 +15,11 @@ Main purpose of this project is to write java application with test units (JUnit
 - Coffee     --- Holds Coffee name and price
                  returns name and price if needed
             
-- Espresso
-- Double Espresso
-- Americano
-- Cappucino
-- Hot Water
-- Caffee Lattee
-- Mocha      --- Child of Coffee class print recipe individually
+-- Espresso    --- Child of Coffee class print recipe individually
+-- Double Espresso
+-- Americano
+-- Cappucino
+-- Hot Water
+-- Caffee Lattee
+-- Mocha             
  
