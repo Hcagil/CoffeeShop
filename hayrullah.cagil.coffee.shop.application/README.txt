@@ -1,1 +1,1 @@
-- Class files are in src folder
+- Java files are in src folder
