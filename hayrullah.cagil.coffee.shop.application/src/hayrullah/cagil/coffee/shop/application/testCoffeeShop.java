@@ -45,5 +45,10 @@ public class testCoffeeShop {
 		assertEquals("Tesekkurler, Kahveniz hazirlaniyor.", shop.prepareOrder());
 	}
 	
+	@Test
+	public void testServeOrder() {
+		int orderNumber = 4;
+		assertEquals(shop.menu[orderNumber-1].getName()+" sectiniz, iceceginiz "+shop.menu[orderNumber-1].getRecipe()+" icermektedir.\nAfiyet Olsun.", shop.serveOrder(orderNumber));
+	}
 
 }

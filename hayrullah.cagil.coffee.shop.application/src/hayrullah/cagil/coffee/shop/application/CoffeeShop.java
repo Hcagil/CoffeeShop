@@ -53,6 +53,9 @@ public class CoffeeShop {
 		
 	}
 	
-
+	public String serveOrder(int orderNumber) {
+		return menu[orderNumber-1].getName()+" sectiniz, iceceginiz "+menu[orderNumber-1].getRecipe()+" icermektedir.\nAfiyet Olsun.";
+	}
+	
 		
 }

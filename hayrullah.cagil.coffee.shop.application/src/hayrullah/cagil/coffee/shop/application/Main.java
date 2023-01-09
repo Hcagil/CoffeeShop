@@ -7,6 +7,7 @@ public class Main {
 		System.out.print(shop.printMenu());
 		int orderNum = shop.getOrder();
 		System.out.println(shop.prepareOrder());
+		System.out.println(shop.serveOrder(orderNum));
 		}
 
 }
