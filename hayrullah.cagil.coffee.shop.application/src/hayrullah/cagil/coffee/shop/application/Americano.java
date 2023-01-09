@@ -5,8 +5,9 @@ public class Americano extends Coffee{
 	public Americano() {
 		super("Americano",10);
 	}
-
+	
+	@Override
 	public String getRecipe() {
-		return "iceceginiz 1 doz espresso ve 4 doz sicak su icermektedir";
+		return "1 doz espresso ve 4 doz sicak su";
 	}
 }

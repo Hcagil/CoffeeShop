@@ -6,7 +6,8 @@ public class HotWater extends Coffee{
 		super("Hot Water",3);
 	}
 
+	@Override
 	public String getRecipe() {
-		return "iceceginiz 5 doz sicak su icermektedir";
+		return "5 doz sicak su";
 	}
 }

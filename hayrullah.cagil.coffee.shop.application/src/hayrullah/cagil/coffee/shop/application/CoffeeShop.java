@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CoffeeShop {
-	Coffee[] menu;
+	public Coffee[] menu;
 	
 	public CoffeeShop() {
 		Coffee espresso = new Espresso();
@@ -48,5 +48,11 @@ public class CoffeeShop {
 
 	}
 	
+	public String prepareOrder() {
+		return "Tesekkurler, Kahveniz hazirlaniyor.";
+		
+	}
+	
+
 		
 }

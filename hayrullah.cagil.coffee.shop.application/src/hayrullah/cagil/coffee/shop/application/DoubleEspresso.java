@@ -6,8 +6,9 @@ public class DoubleEspresso extends Coffee{
 		super("Double Espresso", 12);
 	}
 	
+	@Override
 	public String getRecipe() {
-		return "iceceginiz 2 doz espresso icermektedir";
+		return "2 doz espresso";
 	}
 	
 }

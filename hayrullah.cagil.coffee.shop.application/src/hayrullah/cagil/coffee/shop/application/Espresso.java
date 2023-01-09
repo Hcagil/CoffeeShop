@@ -7,7 +7,8 @@ public class Espresso extends Coffee{
 		super("Espresso",7);
 	}
 	
+	@Override
 	public String getRecipe() {
-		return "iceceginiz 1 doz espresso icermektedir";
+		return "1 doz espresso";
 	}
 }

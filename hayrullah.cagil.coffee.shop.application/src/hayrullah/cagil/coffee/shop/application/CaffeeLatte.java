@@ -6,7 +6,8 @@ public class CaffeeLatte extends Coffee{
 		super("Caffee Latte",12);
 	}
 
+	@Override
 	public String getRecipe() {
-		return "iceceginiz 1 doz espresso, 3 doz sicak sut ve 1 doz sut kopugu icermektedir";
+		return "1 doz espresso, 3 doz sicak sut ve 1 doz sut kopugu";
 	}
 }

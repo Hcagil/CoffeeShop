@@ -6,7 +6,7 @@ public class Main {
 		CoffeeShop shop = new CoffeeShop();
 		System.out.print(shop.printMenu());
 		int orderNum = shop.getOrder();
-		System.out.println(orderNum);
-	}
+		System.out.println(shop.prepareOrder());
+		}
 
 }

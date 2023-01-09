@@ -17,5 +17,8 @@ public class Coffee {
 		return this.price;
 	}
 	
+	public String getRecipe() {
+		return "";
+	}
 
 }
