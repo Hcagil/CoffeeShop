@@ -1,8 +1,12 @@
 package hayrullah.cagil.coffee.shop.application;
 
-public class CoffeeShop {
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-	public static void main(String[] args) {
+public class CoffeeShop {
+	Coffee[] menu;
+	
+	public CoffeeShop() {
 		Coffee espresso = new Espresso();
 		Coffee doubleEspresso = new DoubleEspresso();
 		Coffee cappucino = new Cappucino();
@@ -11,11 +15,11 @@ public class CoffeeShop {
 		Coffee americano = new Americano();
 		Coffee hotWater = new HotWater();
 		
-		Coffee[] menu = {espresso,doubleEspresso,cappucino,caffeeLatte,mocha,americano,hotWater};
-		System.out.print(printMenu(menu));
+		this.menu = new Coffee[]{espresso,doubleEspresso,cappucino,caffeeLatte,mocha,americano,hotWater};
+
 	}
 		
-	public static String printMenu(Coffee[] menu) {
+	public String printMenu() {
 		String res = "";
 		for (int i=0; i < menu.length; i++) {
 			String coffeeName = menu[i].getName();
@@ -24,5 +28,25 @@ public class CoffeeShop {
 		}
 		return res;
 	}
+	
+	public int getOrder() {
+		Scanner input = new Scanner(System.in);
+		int coffeeNumber = -1;
+		System.out.print("Lutfen icmek istediginiz kahvenin numarasini giriniz: ");
+		if (input.hasNextInt()) {
+			coffeeNumber = input.nextInt();			
+		}
+		while ( 0 > coffeeNumber || coffeeNumber >  this.menu.length) {
+			System.out.print("Hatali tuslama yaptiniz lutfen tekrar deneyiniz: ");
+			input.nextLine();
+			if (input.hasNextInt()) {
+				coffeeNumber = input.nextInt();
+			}
+		}
+		input.close();
+		return coffeeNumber;
+
+	}
+	
 		
 }

@@ -10,6 +10,7 @@ import org.junit.Test;
 
 public class testCoffeeShop {
 	Coffee[] menu;
+	CoffeeShop shop;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -30,6 +31,9 @@ public class testCoffeeShop {
 		Coffee americano = new Americano();
 		Coffee hotWater = new HotWater();
 		this.menu = new Coffee[]{espresso,doubleEspresso,cappucino,caffeeLatte,mocha,americano,hotWater};
+		
+		this.shop = new CoffeeShop();
+		
 	}
 
 	@After
@@ -40,7 +44,7 @@ public class testCoffeeShop {
 	public void test() {
 		String menuString = "1. Espresso (7₺)\n2. Double Espresso (12₺)\n3. Cappucino (12₺)\n4. Caffee Latte (12₺)\n5. Mocha (13₺)\n6. Americano (10₺)\n7. Hot Water (3₺)\n";
 
-		assertEquals(CoffeeShop.printMenu(menu), menuString);
+		assertEquals(this.shop.printMenu(), menuString);
 
 	}
 
